@@ -1,10 +1,9 @@
 /*******************
 ****TAG STYLE*******
 *******************/
-h1{
+h1, h2{
 	text-align: center;
 	font-family: arial, helvetica, courier;
-	color: #1877f2;
 }
 *{
 	padding: 0;
@@ -13,18 +12,20 @@ h1{
 }
 body{
 	height: 700px;
-	width: 1300px;
+	width: 100%;
 }
 img{
 	border: 0;
-	position: inherit;
+	position: relative;
 	float:left;
 }
-.clearfix {
+.clearfix: after {
     display: table;
-    clear: both;
+    clear: block;
     content: "";
     overflow: auto;
+    width: 0px;
+    height: 0px;
 }
 /**********************
 ****TOP-PART***********
@@ -35,168 +36,129 @@ img{
 	height: 50%;
 	background-color: #1877f2;
 }
-
-.box{
-	width: 33%;
-	height: 100%;
-	box-sizing: content-box;
-	position: relative;
-	float:left ;
-}
-.part{
+.box-part{
 	width: 100%;
-	height: 33%;
-}
-/*Logo*/
-.logo{
-	left: 33%;
-	width: 33%;
 	height: 100%;
-	position: absolute;
-	display: block;
-	overflow: hidden;
-	background-color: #ffffff;
+	background-image: url('https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.0-9/121032022_906513413087890_3119453974698951157_o.jpg?_nc_cat=109&_nc_sid=e3f864&_nc_ohc=Ti10laqIWPMAX_y83DK&_nc_ht=scontent.fsgn2-4.fna&oh=2a03a63960c164625a1c972d373078ba&oe=5FAFFCC3')
 }
-#logo{
+.information-box{
+	width: 55%;
+	height: 100%;
+	float: right;
+	transform: translate(-155px);
+}
+.infor-text{
+	width: 60%;
+	height: 100%;
+	float: left;
 	position: relative;
+}
+.detail-infor{
+	width: 40%;
+	height: inherit;
+	position: relative;
+	float:left;
+}
+/*Name of Pêrson
+*/
 
+.subject{
+	color: #c70000;
 }
-.image, .inline-picture{
-	position: relative;
-	top: 10%;
-	left: 20%;
-	height: 90%;
-	background-size: 10vh;
+
+.name{
+	font-family: Verdana, Tahoma, Palation;
+	text-align: center;
+	color: #312b2b;
 }
-/*Member Name*/
-.mem{
-	position: relative;
-	font-size: 90%;
-	height: 25%;
-	top: 5%;
-	left: 15%;
-	color: #323030;
-	font-family: OpenSans;
+.school{
+	height: 20%;
+}
+.people{
+	height: 80%;
+}
+.person{
+	height: 15%;
+	margin-top: 10px;
 }
 #mentor{
-	color: #f24436;
-}
-/*Project Name*/
-.project{
-	transform: translate(67%,75%);
-	position: absolute;
-	height: 40%;
-	text-align: center;
-}
-/*Content text*/
-
-.text-name{
-	transform: translate(0px,110%);
-	height: 25%;
-	width: 100%;
-	color: #eaeaea;
-	font-size: 50px;
-	text-align: center;
-}
-/*ID*/
-
-#logo1{
-	background-color: #ffffff;
-}
-/**********************
-****BODY**************
-*********************/
-.body-part{
-	height: 550%;
-	width: 100%;
-}
-
-.insert-picture{
-	padding: 14px;
-	border-bottom: 1px solid #e7e7e7;
-	background-color: #f7f7f7;
-	margin-top: 1px;
-}
-.insert-container{
-	text-align: center;
-}
-.picture-name,.browse-picture, .btn-transport{
-	display: inline-block;
-	border: none;
-	padding: 5px 10px;
-	text-align: left;
-	border: 0.5px solid;
-	border-radius: 5px;
-	background-color: #fff;
-	border-color: #b1b1b3;
-	cursor: pointer;
-
-}
-
-/*Picture*/
-.picture{
-	margin-top: 5px;
-	height: 100%
-}
-.container{
-	float:left;
-	width: 40%;
-	position: relative;
-	text-align: center;
-}
-.transport{
-	width: 20%;
-	float:left;
-	position:relative;
-	text-align: center;
-	height: 100%;
-}
-.picture-infor{
-	position: relative;
-	width: 100%;
-	height: 95%;
-}
-.picture-show{
-	position: absolute;
-	width: 80%;
-	left:10%;
-	height: 100%;
-	position: absolute;
-	display: block;
-}
-.inline-picture{
 	width: 90%;
-	height: auto;
-	left: 5%;
-	top: 5%;
+	text-align: right;
+	position: relative;
 }
-/*Transport*/
-.btn-block{
+#school-name1{
+	font-size: 15px;
+	height: 50%;
+	transform: translateY(40%);
+}
+#school-name2{
+	font-size: 20px;
+	font-style: normal;
+	height: 50%; 
+}
+/*Logo
+**************
+**********/
+
+.logo{
 	height: 20%;
 	width: 100%;
-	position: absolute;
-	top: 45%;
+	transform: translateY(400%);
+	/*background-color: #f7f7f7;*/
 }
-.transport-block{
-	padding: 10px 10px;
-	font-size: 80%;
-}
-.btn{
-	width: 33%;
+.logo-img{
+	width: 50%;
+	height: 100%;
+
+	float:left;
 	position: relative;
-	text-align: center;
-	left: 33%;
+}
+.image{
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	transform: translateX(10%);	
+	
 
 }
-.btn-transport{
-	font-size: 50px;
-}
-/********************
-****BOTTOM-PART******
-********************/
-/*.bottom-part{
-	height: 10%;
-	width: 100%;
+
+.logo-picture{
+	float: inherit;
 	text-align: center;
+	height: 100%;
+	transform: translateX(-25%); 
+	color: #f7f7f7;
+	/*background-color: #f7f7f7;*/
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	position: relative;
 }
-*/
+/*Avatar*/
+
+.avatar{
+	width: 15%;
+	float: right;
+	height: 100%;
+	position: relative;
+}
+
+/*Student Name*/
+
+.student-name, .mentor-name{
+	width: 85%;
+	height: 100%;
+	font-size: 15px;
+	text-align: center;
+	transform: translateY(25%);
+	font-style: italic;
+	font-weight: bold;
+
+}
+.mentor-name{
+	text-align: center;
+	font-family: Tahoma, Palation, Verdana;
+	font-weight: normal;
+}
+	
