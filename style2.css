@@ -2,7 +2,7 @@
 ****BODY**************
 *********************/
 .body-part{
-	height: 60%;
+	height: 50%;
 	width: 100%;
 }
 
@@ -37,6 +37,7 @@
 	float:left;
 	width: 40%;
 	position: relative;
+	height: 100%;
 	text-align: center;
 }
 .transport{

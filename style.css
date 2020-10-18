@@ -4,6 +4,12 @@
 h1, h2{
 	text-align: center;
 	font-family: arial, helvetica, courier;
+	display: flex;
+	flex-direction:  column;
+}
+.flex{
+	display: flex;
+	flex-direction:  row;
 }
 *{
 	padding: 0;
@@ -27,6 +33,12 @@ img{
     width: 0px;
     height: 0px;
 }
+.ico{
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
 /**********************
 ****TOP-PART***********
 **********************/
@@ -45,7 +57,7 @@ img{
 	width: 55%;
 	height: 100%;
 	float: right;
-	transform: translate(-155px);
+	transform: translate(-21%);
 }
 .infor-text{
 	width: 60%;
@@ -56,6 +68,7 @@ img{
 .detail-infor{
 	width: 40%;
 	height: inherit;
+	flex:;
 	position: relative;
 	float:left;
 }
@@ -126,6 +139,7 @@ img{
 	float: inherit;
 	text-align: center;
 	height: 100%;
+	width: auto;
 	transform: translateX(-25%); 
 	color: #f7f7f7;
 	/*background-color: #f7f7f7;*/
